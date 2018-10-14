@@ -84,39 +84,88 @@ System.out.println(" ");
 
  
 
-Constructor const1 = new Constructor();
+Obrero obrero1 = new Obrero();
 
  
 
-const1.nombre = "Jeremías";
+obrero1.nombre = "Jeremías";
 
-const1.equipo = "Azul";
+obrero1.equipo = "Azul";
 
-const1.salud = 80;
+obrero1.salud = 80;
 
-const1.cantidadmateriales = 80;
+obrero1.cantidadmateriales = 80;
 
-const1.estadoherramientas = 65;
+obrero1.estadoherramientas = 65;
+obrero1.equipodetrabajo = 200;
 
  
 
-const1.reportar();
+obrero1.reportar();
+// reportar es metodo de la Superclase Humano
+obrero1.reporteestado();
+//reportar estado es metodo de la clase padre humano
 
-const1.caminar();
+obrero1.caminar();
 
-const1.agacharse();
+obrero1.agacharse();
 
-const1.saltar();
+obrero1.saltar();
 
 //Métodos heredados de la clase Humano
 
-const1.abrircaminos();
+obrero1.equipodetrabajo = 55;
+obrero1.estadoherramientas = 95;
+obrero1.cantidadmateriales = 250;
+//Atributos de la clase padre constructor
 
-const1.construirfuerte();
+obrero1.abrircaminos();
 
-const1.construirpuente();
+obrero1.construirfuerte();
 
-//Métodos propios de la clase Constructor
+obrero1.construirpuente();
 
-}
+//Métodos propios de la clase Obrero
+System.out.println(" ");
+Arquitecto arquit1 = new Arquitecto();
+arquit1.nombre = "Valentino";
+
+arquit1.equipo = "Rojo";
+
+arquit1.salud = 100;
+
+arquit1.cantidadmateriales = 70;
+
+arquit1.estadoherramientas = 95;
+arquit1.equipodetrabajo = 250;
+
+ 
+
+arquit1.reportar();
+// reportar es metodo de la Superclase Humano
+arquit1.reporteestado();
+//reportar estado es metodo de la clase padre humano
+
+arquit1.caminar();
+
+arquit1.saltar();
+
+//Métodos heredados de la clase Humano
+
+arquit1.equipodetrabajo = 55;
+arquit1.estadoherramientas = 95;
+arquit1.cantidadmateriales = 250;
+//Atributos de la clase padre constructor
+
+arquit1.trazarcaminos();
+
+arquit1.diseniarfuerte();
+
+arquit1.diseniarpuente();
+
+//Métodos propios de la clase Arquitecto
+System.out.println(" ");
+
+        }
+
 }
